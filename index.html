@@ -8,30 +8,44 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="javascript.js"></script>
     </head>
     <body>
         <div id="header">
-            <a href="#HOME"><img id="logo" src="arcLogo.png" alt="arcLogo" width="101" height="60"></a>
+            <a href="#HOME" onclick="updateToHomebody();"><img id="logo" src="arcLogo.png" alt="arcLogo" width="101" height="60"></a>
+            <!-- onclick="updateBody(#HOMEPAGE);" -->
             <ul>
                 <li><a href="#MEN">MEN</a></li>
                 <li><a href="#WOMEN">WOMEN</a></li>
                 <li><a href="#FOOTWEAR">FOOTWEAR</a></li>
                 <li><a href="#EXPLORE">EXPLORE</a></li>
-                <li><a href="#28_PROJECT">THE <span>28</span> PROJECT</a></li>
+                <li><a href="#28_PROJECT" onclick="updateToProjbody();">THE <span>28</span> PROJECT</a></li>
+                <!-- onclick="updateBody(#projbody);" -->
             </ul>
         </div>
         <hr>
-        <div id="body">
+
+        <div id="projbody" class="body">
             <div id="sectionsAndHeader">
                 <h1>The <span>28</span> Project</h1>
-                <!-- <hr> -->
                 <div id="sections">
-                    <div class="route">Training Routes by Period</div>
-                    <div class="filter">Clothing Filter</div>
-                    <div class="events">Events</div>
+                    <a href="#ROUTE">
+                        <div class="route section">Training Routes by Period</div>
+                    </a>
+                    <a href="#FILTER">
+                        <div class="filter section">Clothing Filter</div>
+                    </a>
+                    <a href="#EVENTS">
+                        <div class="events section">Events</div>
+                    </a>
                 </div>
             </div>
             <img src="tole-cat.png" alt="SideImg">
+        </div>
+
+        <div id="homebody" class="body">
+            <img src="whiteArcLogo.png" alt="logo" width="600">
+            <div id="homeCaption">THERE IS ALWAYS A BETTER WAY</div>
         </div>
     </body>
 </html>
