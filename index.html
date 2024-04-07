@@ -25,27 +25,127 @@
         </div>
         <hr>
 
-        <div id="projbody" class="body">
-            <div id="sectionsAndHeader">
-                <h1>The <span>28</span> Project</h1>
+        <div id="homebody" style="display: none;">
+            <img src="whiteArcLogo.png" alt="logo" width="600">
+            <div id="homeCaption">THERE IS ALWAYS A BETTER WAY</div>
+        </div>
+
+        <div id="projbody" style="display: none;">
+            <div class="sectionsAndHeader">
+                <h1>THE <span>28</span> PROJECT</h1>
                 <div id="sections">
-                    <a href="#ROUTE">
+                    <a href="#">
                         <div class="route section">Training Routes by Period</div>
                     </a>
-                    <a href="#FILTER">
-                        <div class="filter section">Clothing Filter</div>
+                    <a href="#" onclick="updateToTrainbody()">
+                        <div class="filter section">Filter by Phases</div>
                     </a>
-                    <a href="#EVENTS">
+                    <a href="#">
                         <div class="events section">Events</div>
                     </a>
                 </div>
             </div>
-            <img src="tole-cat.png" alt="SideImg">
+            <!-- <img src="tole-cat.png" alt="SideImg"> -->
         </div>
 
-        <div id="homebody" class="body">
-            <img src="whiteArcLogo.png" alt="logo" width="600">
-            <div id="homeCaption">THERE IS ALWAYS A BETTER WAY</div>
+        <div id="trainbody" style="display: none;">
+            <h1>FILTER BY PHASES</h1>
+            <div class="spacer">
+                <h2>Phase 1: Menstrual Phase</h2>
+                <p>With energy at your lowest and cramps keeping you down, comfort is key. </p>
+                <h3>Accomplish Your Goals With:</h3>
+            </div>
+            <div class="products">
+                <a href="https://arcteryx.com/shop/womens/essent-high-rise-utility-legging-26" target=”_blank”>
+                    <img src="phase1_1.jpg" alt="button img">
+                    <span class="desc">Stretch, breathability, and pockets in a versatile tight for high-output activities.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/teplo-short" target=”_blank”>
+                    <img src="phase1_2.avif" alt="button img">
+                    <span class="desc">Versatile, lightweight short made for performance and comfort on the move.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/proton-pant" target=”_blank”>
+                    <img src="phase1_3.jpg" alt="button img">
+                    <span class="desc">Versatile, breathable, lightly-insulated pant works as a standalone or midlayer.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/essent-warm-high-rise-legging-26" target=”_blank”>
+                    <img src="phase1_4.jpg" alt="button img">
+                    <span class="desc">Versatile, comfortable cold-weather performance legging with excellent stretch.</span>
+                </a>
+            </div>
+
+            <div class="spacer">
+                <h2>Phase 2: Follicular Phase</h2>
+                <p>Improved energy levels allow for more intense activity.</p>
+                <h3>Accomplish Your Goals With:</h3>
+            </div>
+            <div class="products">
+                <a href="https://arcteryx.com/ca/en/shop/womens/gamma-utility-short-5" target=”_blank”>
+                    <img src="phase2_1.jpg" alt="button img">
+                    <span class="desc">Comfortable, durable high-rise softshell hiking short with stretch and storage.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/aestas-short-5-5" target=”_blank”>
+                    <img src="phase2_2.jpg" alt="button img">
+                    <span class="desc">Highly versatile short for hot-weather approaches, hikes, and all-around mountain adventure.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/rho-bottom" target=”_blank”>
+                    <img src="phase2_3.jpg" alt="button img">
+                    <span class="desc">Performance base layer for lower output activities in cool to cold temperatures.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/essent-high-rise-short-8" target=”_blank”>
+                    <img src="phase2_4.jpg" alt="button img">
+                    <span class="desc">All-mountain performance short with excellent durability and stretch.</span>
+                </a>
+            </div>
+
+            <div class="spacer">
+                <h2>Phase 3: Ovulation Phase</h2>
+                <p>Freedom of breathability and movement to take you farther.</p>
+                <h3>Accomplish Your Goals With:</h3>
+            </div>
+            <div class="products">
+                <a href="https://arcteryx.com/ca/en/shop/womens/norvan-short-5" target=”_blank”>
+                    <img src="phase3_1.jpg" alt="button img">
+                    <span class="desc">Pinnacle performance and comfort in a light, breathable trail running short.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/gamma-lightweight-pant" target=”_blank”>
+                    <img src="phase3_2.jpg" alt="button img">
+                    <span class="desc">Lightweight, highly versatile softshell pant made from recycled materials.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/rho-merino-wool-bottom" target=”_blank”>
+                    <img src="phase3_3.jpg" alt="button img">
+                    <span class="desc">Versatile lightweight base layer with the natural performance of Merino wool.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/norvan-shell-pant" target=”_blank”>
+                    <img src="phase3_4.jpg" alt="button img">
+                    <span class="desc">Light, highly packable, exceptionally breathable GORE-TEX pant for trail runners.</span>
+                </a>
+            </div>
+
+            <div class="spacer">
+                <h2>Phase 4: Luteal Phase</h2>
+                <p>Take it slow with stretchy soft fabrics.</p>
+                <h3>Accomplish Your Goals With:</h3>
+            </div>
+            <div class="products">
+                <a href="https://arcteryx.com/ca/en/shop/womens/gamma-hybrid-pant" target=”_blank”>
+                    <img src="phase4_1.jpg" alt="button img">
+                    <span class="desc">Enhanced mobility and secure storage in a light, durable, breathable hiking pant.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/norvan-short-3" target=”_blank”>
+                    <img src="phase4_2.jpg" alt="button img">
+                    <span class="desc">Pinnacle performance and comfort in a light, breathable trail running short.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/clarkia-wide-leg-pant" target=”_blank”>
+                    <img src="phase4_3.jpg" alt="button img">
+                    <span class="desc">Durable, comfortable wide-leg pant for sport, trad, boulder, and gym.</span>
+                </a>
+                <a href="https://arcteryx.com/ca/en/shop/womens/alpha-pant" target=”_blank”>
+                    <img src="phase4_4.jpg" alt="button img">
+                    <span class="desc">Light GORE-TEX pant delivering versatile performance for alpine environments.</span>
+                </a>
+            </div>
         </div>
+
     </body>
 </html>
