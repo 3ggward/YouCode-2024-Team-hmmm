@@ -75,7 +75,7 @@ hr {
     display: flex;
     /* flex: 1; */
     flex-direction: column;
-    width: 80vw;
+    width: 100vw;
 }
 
 #projbody img {
@@ -91,33 +91,46 @@ hr {
 
 .section {
     display: flex;
+    flex: 1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    border: 1px black solid;
+    text-align: center;
+    width: 33.33vw;
+    height: 100vh;
+    margin: 0;
+
+    color: white;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .section:hover {
-    background-color: #111111;
-    color: white;
     transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .route {
-    width: 250px;
+    background-image: url("route.jpg");
+    background-size: cover;
 }
 
 .filter {
-    width: 200px;
+    background-image: url("filter.jpg");
+    background-size: cover;
 }
 
 .events {
-    width: 200px;
+    background-image: url("event.jpg");
+    background-size: cover;
 }
 
 h1 {
     text-align: center;
-    padding: 0px 0px 20px 0px;
+    margin: 0;
+    padding: 20px 0px 20px 0px;
     border-bottom: 0.5rem solid;
 }
 

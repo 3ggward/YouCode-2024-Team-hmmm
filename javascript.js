@@ -8,7 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
     trainBody = document.querySelector("#trainbody");
 
     hideAllBodies();
-    updateToHomebody();
+    // updateToHomebody();
+    updateToProjbody();
 });
 
 function updateToProjbody() {
